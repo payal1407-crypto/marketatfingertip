@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .btn {
+  background-color: rgb(255, 30, 60);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(218, 38, 15);}
+div.background {
+  background: url("https://images.unsplash.com/photo-1454587399083-b11b22f48fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 40px;
+  background-color: #f1faf8;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.accordion {
+  background-image:linear-gradient(100deg ,#bdc3c7 , #2c3e50 );;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid beige;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:rgb(167, 161, 161); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:white;
+  overflow: hidden;
+}
+h2{
+  font-size: 70px;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+@media screen and (max-width: 748px){
+  h2{
+    text-align: left;
+  }
+}
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="home.html"><button class="btn"><i class="fa fa-home">HOME</i></button></a>
+  
+
+
+  <div class="background">
+    <div class="transbox">
+      <p><h2>STATIONARY</h2></p>
+    </div>
+  </div>
+  
+
+  
+
+<button class="accordion"><strong>STATE LIBRARY</strong></button>
+<div class="panel">
+  <p><strong>Address: Sardar Patel Nagar, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>TEMPORARILY CLOSED</strong></p>
+  <p><strong>Phone :932587410</strong></p>
+</div>
+<button class="accordion"><strong>DHANBAD BOOK STORES</strong></button>
+<div class="panel">
+  <p><strong>Address: HE School road, Near, Randhir Verma Chowk, Hirapur, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours :Monday-Saturday(9am-9pm)</strong></p>
+  <p><strong>Phone: 097091 58668</strong></p>
+</div>
+<button class="accordion"><strong>DEZI STATIONARY & GIFT STORE</strong></button>
+<div class="panel">
+  <p><strong>Address: Shop No.40, New Mini Market, I.S.M., Gate-1, Main Road, Dhanbad, Jharkhand</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours: Monday-Wednesday(10am-9pm); Friday-Saturday(11am-2pm ; 4pm-6pm)</strong></p>
+  <p><strong>Phone: 095040 61237</strong></p>
+</div><button class="accordion"><strong>ABHIJEET BOOK STORE( Buy And Sale In Old And New Books)</strong></button>
+<div class="panel">
+  <p><strong>Address: Abhoya Sundri School Road, Hirapur, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>TEMPORARILY CLOSED</strong></p>
+  <p><strong>Phone: 084342 35116</strong></p>
+</div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

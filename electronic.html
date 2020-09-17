@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .btn {
+  background-color: rgb(255, 30, 60);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(218, 38, 15);
+}
+div.background {
+  background: url("https://images.unsplash.com/photo-1441095179793-e2c059a90f56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 40px;
+  background-color: #f1faf8;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.accordion {
+  background-image: linear-gradient(100deg ,#bdc3c7 , #2c3e50 );
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: 2px solid beige;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color:rgb(167, 161, 161); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:white;
+  overflow: hidden;
+}
+h2{
+  font-size: 70px;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+@media screen and (max-width: 748px){
+  h2{
+    text-align: left;
+  }
+}
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="home.html"><button class="btn"><i class="fa fa-home">HOME</i></button></a>
+ 
+  
+
+
+</div>
+  <div class="background">
+    <div class="transbox">
+      <p><h2>ELECTRONICS</h2></p>
+    </div>
+  </div>
+  
+
+  
+
+<button class="accordion"><strong>SHREE BALAJEE STEEL - HARDWARE AND STEEL SHOP IN DHANBAD</strong></button>
+<div class="panel">
+  <p><strong>Address: Super Market, Katras Rd, Bank More, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours: Sunday-Saturday	(9am–8pm)</strong></p>
+  <p><strong>Phone: 094313 16612</strong></p>
+</div>
+<button class="accordion"><strong>SONY ELECTRONICS</strong></button>
+<div class="panel">
+  <p><strong>Address: Pandey Muhalla, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours:WEdnesday-Sunday(9am-9pm)</strong></p>
+  <p><strong></strong></p>
+</div>
+<button class="accordion"><strong>iTech® - Apple Authorised Store™</strong></button>
+<div class="panel">
+  <p><strong>Address: Centre Point Mall 15 & 16, 1ST FLOOR, Bank More, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours: Sunday-Saturday(11am-8pm)</strong></p>
+  <p><strong>Phone: 092641 60106</strong></p>
+</div>
+<button class="accordion"><strong>RAMSONS ELECTRONICS</strong></button>
+<div class="panel">
+  <p><strong>Address: 123, Urmila Towers, Dhanbad - Sindri Rd, Near Ozone Plaza, Bank More, Dhanbad, Jharkhand 826001</strong></p>
+  <p><strong>OPEN</strong></p>
+  <p><strong>Hours: Monday-Saturday(11am-9Pm)</strong></p>
+  <p><strong>Phone: 099343 41429</strong></p>
+</div>
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
